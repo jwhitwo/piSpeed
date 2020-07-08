@@ -20,7 +20,7 @@ flp.show()
 
 s.upload()
 
-result = s.results()
+result = s.results
 
 down_mb = result.download/1024/1024
 up_mb = result.upload/1024/1024
