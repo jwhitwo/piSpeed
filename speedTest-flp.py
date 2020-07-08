@@ -25,6 +25,5 @@ result = s.results
 down_mb = result.download/1024/1024
 up_mb = result.upload/1024/1024
 
-
-print("Download: " + down_mb)
-print("Download: " + up_mb)
+print("Download: " + "{:.2f}".format(down_mb))
+print("Download: " + "{:.2f}".format(up_mb))
