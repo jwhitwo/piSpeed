@@ -3,7 +3,7 @@ import fourletterphat as flp
 
 servers = []
 
-flp.scorll_print("STARTING TEST")
+flp.scroll_print("STARTING TEST")
 flp.show()
 
 s = speedtest.Speedtest()
