@@ -1,17 +1,23 @@
 import speedtest
+import fourletterphat as flp
 
 servers = []
 
-print("Getting servers...")
+flp.scorll_print("STARTING TEST")
+flp.show()
 
 s = speedtest.Speedtest()
 s.get_servers(servers)
 s.get_best_server()
-print("Server selected. Testing download...")
-s.download()
-print("Download complete. Testing upload.")
-s.upload()
 
-print(s.results.dict())
+flp.print_str("DOWN")
+flp.show()
+
+s.download()
+
+flp.print_str("UP")
+flp.show()
+
+s.upload()
 
 print("Test complete!")
